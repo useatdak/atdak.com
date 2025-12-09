@@ -1,11 +1,10 @@
 # Build stage
 FROM node:22-alpine AS builder
 
-# Install build dependencies for native modules
-RUN apk add --no-cache python3 make g++
-
-# Install pnpm
-RUN corepack enable && corepack prepare pnpm@latest --activate
+# Install build dependencies and pnpm
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories && \
+    apk add --no-cache python3 make g++ && \
+    corepack enable && corepack prepare pnpm@latest --activate
 
 WORKDIR /app
 
