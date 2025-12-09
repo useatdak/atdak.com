@@ -22,7 +22,6 @@ dist/
 eslint.config.*
 .prettierrc*
 .editorconfig
-tsconfig.json
 renovate.json
 
 # Test files

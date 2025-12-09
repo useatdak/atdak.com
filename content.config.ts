@@ -73,7 +73,103 @@ export const collections = {
   }),
   products: defineCollection({
     source: '3.products.yml',
-    type: 'page'
+    type: 'page',
+    schema: z.object({
+      categories: z.array(
+        z.object({
+          id: z.string(),
+          label: z.string(),
+          icon: z.string().optional()
+        })
+      ).optional(),
+      products: z.array(
+        z.object({
+          id: z.string(),
+          category: z.string(),
+          name: z.string(),
+          tagline: z.string().optional(),
+          description: z.string().optional(),
+          icon: z.string().optional(),
+          badge: z.string().optional(),
+          colors: z.array(
+            z.object({
+              name: z.string(),
+              class: z.string()
+            })
+          ).optional(),
+          features: z.array(z.string()).optional(),
+          price: z.string().optional(),
+          originalPrice: z.string().optional(),
+          priceNote: z.string().optional(),
+          links: z.array(createLinkSchema()).optional()
+        })
+      ).optional(),
+      showcase: z.object({
+        title: z.string(),
+        description: z.string().optional(),
+        video: z.object({
+          poster: z.string().optional(),
+          src: z.string().optional()
+        }).optional(),
+        demos: z.array(
+          z.object({
+            title: z.string(),
+            description: z.string().optional(),
+            icon: z.string().optional()
+          })
+        ).optional()
+      }).optional(),
+      benefits: z.object({
+        title: z.string(),
+        items: z.array(
+          z.object({
+            title: z.string(),
+            description: z.string().optional(),
+            icon: z.string().optional()
+          })
+        ).optional()
+      }).optional(),
+      knowAI: z.object({
+        title: z.string(),
+        items: z.array(
+          z.object({
+            title: z.string(),
+            description: z.string().optional(),
+            icon: z.string().optional()
+          })
+        ).optional()
+      }).optional(),
+      ecosystem: z.object({
+        title: z.string(),
+        description: z.string().optional(),
+        items: z.array(
+          z.object({
+            title: z.string(),
+            description: z.string().optional(),
+            icon: z.string().optional(),
+            image: z.string().optional()
+          })
+        ).optional()
+      }).optional(),
+      accessories: z.object({
+        title: z.string(),
+        items: z.array(
+          z.object({
+            title: z.string(),
+            description: z.string().optional(),
+            icon: z.string().optional(),
+            link: z.object({
+              to: z.string(),
+              label: z.string(),
+              target: z.string().optional()
+            }).optional()
+          })
+        ).optional()
+      }).optional(),
+      cta: createBaseSchema().extend({
+        links: z.array(createLinkSchema())
+      }).optional()
+    })
   }),
   productPages: defineCollection({
     source: '3.products/**/*',

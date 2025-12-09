@@ -7,7 +7,7 @@ useSeoMeta({
 const benefits = [
   { icon: 'i-lucide-banknote', title: '有竞争力的薪酬', description: '提供行业领先的薪资待遇和股权激励' },
   { icon: 'i-lucide-heart-pulse', title: '全面的福利保障', description: '五险一金、补充医疗、年度体检' },
-  { icon: 'i-lucide-palm-tree', title: '弹性工作制度', description: '灵活的工作时间，支持远程办公' },
+  { icon: 'i-lucide-calendar-days', title: '弹性工作制度', description: '灵活的工作时间，支持远程办公' },
   { icon: 'i-lucide-graduation-cap', title: '学习成长机会', description: '技术分享、培训补贴、会议参与' },
   { icon: 'i-lucide-utensils', title: '免费餐饮零食', description: '提供午餐晚餐，无限量零食饮料' },
   { icon: 'i-lucide-gamepad-2', title: '丰富团建活动', description: '季度团建、年度旅游、节日福利' }
