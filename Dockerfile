@@ -11,6 +11,11 @@ WORKDIR /app
 # Copy package files
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml .npmrc ./
 
+# Set npm/node-gyp mirror for faster native module compilation
+ENV npm_config_registry=https://registry.npmmirror.com
+ENV npm_config_disturl=https://npmmirror.com/mirrors/node
+ENV npm_config_python=/usr/bin/python3
+
 # Install dependencies
 RUN pnpm install --frozen-lockfile
 
