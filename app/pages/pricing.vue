@@ -17,11 +17,11 @@ const isYearly = ref('0')
 
 const items = ref([
   {
-    label: 'Monthly',
+    label: '月付',
     value: '0'
   },
   {
-    label: 'Yearly',
+    label: '年付',
     value: '1'
   }
 ])
@@ -56,12 +56,12 @@ const items = ref([
           :key="index"
           v-bind="plan"
           :price="isYearly === '1' ? plan.price.year : plan.price.month"
-          :billing-cycle="isYearly === '1' ? '/year' : '/month'"
+          :billing-cycle="isYearly === '1' ? '/年' : '/月'"
         />
       </UPricingPlans>
     </UContainer>
 
-    <UPageSection>
+    <UPageSection v-if="page.logos?.icons">
       <UPageLogos>
         <UIcon
           v-for="icon in page.logos.icons"

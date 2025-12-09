@@ -71,6 +71,14 @@ export const collections = {
       })
     })
   }),
+  products: defineCollection({
+    source: '3.products.yml',
+    type: 'page'
+  }),
+  productPages: defineCollection({
+    source: '3.products/**/*',
+    type: 'page'
+  }),
   docs: defineCollection({
     source: '1.docs/**/*',
     type: 'page'
@@ -109,11 +117,11 @@ export const collections = {
     })
   }),
   blog: defineCollection({
-    source: '3.blog.yml',
+    source: '4.blog.yml',
     type: 'page'
   }),
   posts: defineCollection({
-    source: '3.blog/**/*',
+    source: '4.blog/**/*',
     type: 'page',
     schema: z.object({
       image: z.object({ src: z.string().nonempty().editor({ input: 'media' }) }),
@@ -129,11 +137,11 @@ export const collections = {
     })
   }),
   changelog: defineCollection({
-    source: '4.changelog.yml',
+    source: '5.changelog.yml',
     type: 'page'
   }),
   versions: defineCollection({
-    source: '4.changelog/**/*',
+    source: '5.changelog/**/*',
     type: 'page',
     schema: z.object({
       title: z.string().nonempty(),

@@ -1,82 +1,76 @@
-title: A plan for every need
-description: Our plans are designed to meet the requirements of both beginners and players. Get the right plan that suits you.
+title: 灵活的定价方案
+description: 根据您的业务规模选择合适的方案，按需付费，无隐藏费用。
 seo:
-  title: Pricing
-  description: Choose the plan that's right for you.
+  title: 定价方案 - 艾塔达克
+  description: 艾塔达克提供灵活的 AI 服务定价方案，支持按量计费和包月套餐，满足个人开发者和企业的不同需求。
 navigation.icon: i-lucide-credit-card
 plans:
-  - title: Basic
-    description: A basic plan for individuals.
+  - title: 免费版
+    description: 适合个人开发者体验和测试
     price:
-      month: $9.9
-      year: $99.9
+      month: ¥0
+      year: ¥0
     button:
-      label: Get Started
+      label: 免费开始
       color: neutral
       variant: subtle
+      to: https://console.atdak.com/signup
+      target: _blank
     features:
-      - 1 GB Storage
-      - 1 Email Account
-      - 1 Domain
-      - 1 Website
-      - 1 Database
-      - 1 SSL Certificate
-      - 1 Support Ticket
-  - title: Standard
-    description: A standard plan for small teams.
+      - 每月 10,000 次 API 调用
+      - 基础大语言模型
+      - 图像识别 100 次/月
+      - 社区支持
+      - API 文档访问
+  - title: 专业版
+    description: 适合个人开发者和小型团队
     price:
-      month: $19.9
-      year: $199.9
+      month: ¥99
+      year: ¥999
     highlight: true
     scale: true
     button:
-      label: Get Started
+      label: 立即订阅
+      to: https://console.atdak.com/pricing
+      target: _blank
     features:
-      - 10 GB Storage
-      - 10 Email Accounts
-      - 10 Domains
-      - 10 Websites
-      - 10 Databases
-      - 10 SSL Certificates
-      - 10 Support Tickets
-  - title: Premium
-    description: A premium plan for large teams.
+      - 每月 100,000 次 API 调用
+      - 全部大语言模型
+      - 图像识别 1,000 次/月
+      - 语音服务 10 小时/月
+      - 邮件技术支持
+      - 优先队列处理
+  - title: 企业版
+    description: 适合中大型企业和高需求场景
     price:
-      month: $29.9
-      year: $299.9
+      month: ¥999
+      year: ¥9,999
     button:
-      label: Get Started
+      label: 联系销售
       color: neutral
       variant: subtle
+      to: /contact
     features:
-      - 100 GB Storage
-      - 100 Email Accounts
-      - 100 Domains
-      - 100 Websites
-      - 100 Databases
-      - 100 SSL Certificates
-      - 100 Support Tickets
-logos:
-  title: Trusted by the world's best
-  icons:
-    - i-simple-icons-amazonaws
-    - i-simple-icons-heroku
-    - i-simple-icons-netlify
-    - i-simple-icons-vercel
-    - i-simple-icons-cloudflare
+      - 无限 API 调用
+      - 全部 AI 能力
+      - 专属推理资源
+      - 私有化部署支持
+      - 7x24 专属客服
+      - SLA 服务保障
+      - 定制化开发支持
 faq:
-  title: Frequently asked questions
-  description: Culpa consectetur dolor pariatur commodo aliqua amet tempor nisi enim deserunt elit cillum.
+  title: 常见问题
+  description: 关于定价和计费的常见问题解答，如有其他疑问请联系我们的客服团队。
   items:
-    - label: Is this a secure service?
-      content: Qui sunt nostrud aliquip reprehenderit enim proident veniam magna aliquip velit occaecat eiusmod nisi deserunt sunt.
-    - label: How can I cancel my subscription?
-      content: Consectetur irure Lorem nostrud adipisicing aliqua mollit Lorem sit officia magna eiusmod cupidatat.
-    - label: How does the free trial work?
-      content: Quis officia commodo magna eu qui aliquip duis.
-    - label: Can I switch plans later?
-      content: Dolore irure ullamco dolore eu occaecat magna eiusmod dolor aliqua culpa labore.
-    - label: Do you offer refunds?
-      content: Duis mollit nostrud voluptate mollit Lorem dolore commodo veniam incididunt eiusmod.
-    - label: Do you offer support?
-      content: Aliqua sit nisi consequat pariatur Lorem minim irure qui.
+    - label: 免费版有什么限制？
+      content: 免费版每月提供 10,000 次 API 调用额度，支持基础大语言模型，适合个人开发者体验和小型项目测试使用。
+    - label: 如何升级或降级套餐？
+      content: 您可以随时在控制台中升级或降级套餐。升级立即生效，降级将在当前计费周期结束后生效。
+    - label: 是否支持按量计费？
+      content: 是的，除了套餐包月模式，我们也支持纯按量计费模式，超出套餐额度的部分将按实际使用量计费。
+    - label: 企业版如何定价？
+      content: 企业版支持定制化方案，根据您的具体需求（调用量、私有化部署、定制开发等）提供专属报价，请联系我们的销售团队。
+    - label: 是否支持退款？
+      content: 包月套餐在购买后 7 天内未使用的情况下支持全额退款。超过 7 天或已产生使用记录的不支持退款。
+    - label: 如何获取技术支持？
+      content: 免费版用户可通过社区论坛获取帮助，专业版用户享有邮件支持，企业版用户可获得 7x24 专属客服支持。

@@ -1,0 +1,77 @@
+title: 产品服务
+description: 艾塔达克提供全面的 AI 云服务和专业硬件设备，满足您的智能化需求。
+seo:
+  title: 产品服务 - 艾塔达克
+  description: 探索艾塔达克的 AI 云服务和硬件产品，包括大语言模型、图像处理、语音服务以及边缘计算设备。
+navigation.icon: i-lucide-box
+hero:
+  title: AI 能力，触手可及
+  description: 从云端服务到边缘设备，艾塔达克为您提供完整的 AI 解决方案。
+services:
+  title: AI 云服务
+  description: 基于云端的 AI 能力，通过 API 快速接入，按需使用。
+  items:
+    - title: 大语言模型服务
+      description: 支持多种主流大语言模型，提供文本生成、智能对话、内容摘要、多语言翻译等能力。
+      icon: i-lucide-message-square
+      features:
+        - GPT-4、Claude、Llama 等模型支持
+        - 流式输出，实时响应
+        - 上下文记忆，多轮对话
+        - 自定义 Prompt 模板
+      link:
+        label: 查看文档
+        to: /docs/llm
+    - title: 图像智能服务
+      description: 全面的计算机视觉能力，支持图像识别、目标检测、图像生成等场景。
+      icon: i-lucide-image
+      features:
+        - 图像分类与标签识别
+        - 目标检测与定位
+        - OCR 文字识别
+        - AI 图像生成
+      link:
+        label: 查看文档
+        to: /docs/vision
+    - title: 语音智能服务
+      description: 高精度语音识别与自然语音合成，支持多语种、多方言。
+      icon: i-lucide-mic
+      features:
+        - 实时语音转文字
+        - 高质量语音合成
+        - 声纹识别与验证
+        - 多语种支持
+      link:
+        label: 查看文档
+        to: /docs/speech
+hardware:
+  title: AI 硬件产品
+  description: 自研边缘计算设备，将 AI 能力部署到本地，实现安全、高效的智能推理。
+  featured:
+    title: atdak Edge Pro
+    subtitle: 企业级 AI 边缘计算设备
+    description: 专为企业设计的边缘 AI 推理设备，搭载高性能 AI 芯片，支持本地部署大语言模型，实现毫秒级响应和数据本地化处理。
+    image: /images/hardware/edge-pro.png
+    price: ¥12,999
+    features:
+      - 高性能 NPU 芯片，256 TOPS 算力
+      - 支持 7B-70B 参数大模型本地推理
+      - 32GB 高速内存，1TB NVMe 存储
+      - 千兆以太网，支持集群部署
+      - 静音散热设计，7x24 稳定运行
+      - 预装 atdak OS，开箱即用
+    link:
+      label: 了解详情
+      to: /products/edge-pro
+cta:
+  title: 开始使用艾塔达克
+  description: 注册即可获得免费试用额度，体验强大的 AI 能力。
+  links:
+    - label: 免费试用
+      to: https://console.atdak.com/signup
+      target: _blank
+      trailingIcon: i-lucide-arrow-right
+    - label: 联系销售
+      to: /contact
+      variant: subtle
+      icon: i-lucide-phone

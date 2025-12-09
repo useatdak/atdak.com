@@ -3,8 +3,17 @@
 
 @source "../../../content/**/*";
 
+@font-face {
+  font-family: 'EDIX';
+  src: url('/fonts/EDIX.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme static {
   --font-sans: 'Public Sans', sans-serif;
+  --font-brand: 'EDIX', 'Public Sans', sans-serif;
 
   --color-green-50: #EFFDF5;
   --color-green-100: #D9FBE8;

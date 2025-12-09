@@ -7,8 +7,8 @@ definePageMeta({
 })
 
 useSeoMeta({
-  title: 'Sign up',
-  description: 'Create an account to get started'
+  title: '注册',
+  description: '创建您的艾塔达克账号'
 })
 
 const toast = useToast()
@@ -16,38 +16,38 @@ const toast = useToast()
 const fields = [{
   name: 'name',
   type: 'text' as const,
-  label: 'Name',
-  placeholder: 'Enter your name'
+  label: '姓名',
+  placeholder: '请输入您的姓名'
 }, {
   name: 'email',
   type: 'text' as const,
-  label: 'Email',
-  placeholder: 'Enter your email'
+  label: '邮箱',
+  placeholder: '请输入邮箱地址'
 }, {
   name: 'password',
-  label: 'Password',
+  label: '密码',
   type: 'password' as const,
-  placeholder: 'Enter your password'
+  placeholder: '请输入密码（至少 8 位）'
 }]
 
 const providers = [{
-  label: 'Google',
-  icon: 'i-simple-icons-google',
+  label: '微信注册',
+  icon: 'i-simple-icons-wechat',
   onClick: () => {
-    toast.add({ title: 'Google', description: 'Login with Google' })
+    toast.add({ title: '微信', description: '正在跳转微信授权...' })
   }
 }, {
   label: 'GitHub',
   icon: 'i-simple-icons-github',
   onClick: () => {
-    toast.add({ title: 'GitHub', description: 'Login with GitHub' })
+    toast.add({ title: 'GitHub', description: '正在跳转 GitHub 授权...' })
   }
 }]
 
 const schema = z.object({
-  name: z.string().min(1, 'Name is required'),
-  email: z.string().email('Invalid email'),
-  password: z.string().min(8, 'Must be at least 8 characters')
+  name: z.string().min(1, '请输入姓名'),
+  email: z.string().email('邮箱格式不正确'),
+  password: z.string().min(8, '密码至少需要 8 个字符')
 })
 
 type Schema = z.output<typeof schema>
@@ -62,22 +62,22 @@ function onSubmit(payload: FormSubmitEvent<Schema>) {
     :fields="fields"
     :schema="schema"
     :providers="providers"
-    title="Create an account"
-    :submit="{ label: 'Create account' }"
+    title="创建账号"
+    :submit="{ label: '立即注册' }"
     @submit="onSubmit"
   >
     <template #description>
-      Already have an account? <ULink
+      已有账号？<ULink
         to="/login"
         class="text-primary font-medium"
-      >Login</ULink>.
+      >立即登录</ULink>
     </template>
 
     <template #footer>
-      By signing up, you agree to our <ULink
+      注册即表示您同意我们的 <ULink
         to="/"
         class="text-primary font-medium"
-      >Terms of Service</ULink>.
+      >服务条款</ULink>。
     </template>
   </UAuthForm>
 </template>

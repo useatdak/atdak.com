@@ -1,36 +1,49 @@
 <script setup lang="ts">
 const columns = [{
-  label: 'Resources',
+  label: '产品服务',
   children: [{
-    label: 'Help center'
+    label: 'AI 服务',
+    to: '/products'
   }, {
-    label: 'Docs'
+    label: 'AI 硬件',
+    to: '/products/edge-pro'
   }, {
-    label: 'Roadmap'
+    label: 'API 文档',
+    to: '/docs'
   }, {
-    label: 'Changelog'
+    label: '定价方案',
+    to: '/pricing'
   }]
 }, {
-  label: 'Features',
+  label: '资源支持',
   children: [{
-    label: 'Affiliates'
+    label: '帮助中心',
+    to: '/docs/getting-started'
   }, {
-    label: 'Portal'
+    label: '技术博客',
+    to: '/blog'
   }, {
-    label: 'Jobs'
+    label: '更新日志',
+    to: '/changelog'
   }, {
-    label: 'Sponsors'
+    label: '服务状态',
+    to: 'https://status.atdak.com',
+    target: '_blank'
   }]
 }, {
-  label: 'Company',
+  label: '关于我们',
   children: [{
-    label: 'About'
+    label: '公司介绍',
+    to: '/about'
   }, {
-    label: 'Pricing'
+    label: '联系我们',
+    to: '/contact'
   }, {
-    label: 'Careers'
+    label: '加入我们',
+    to: '/careers'
   }, {
-    label: 'Blog'
+    label: '合作伙伴',
+    to: '/partners'
   }]
 }]
 
@@ -43,15 +56,15 @@ function onSubmit() {
   loading.value = true
 
   toast.add({
-    title: 'Subscribed!',
-    description: 'You\'ve been subscribed to our newsletter.'
+    title: '订阅成功！',
+    description: '您已成功订阅我们的新闻通讯。'
   })
 }
 </script>
 
 <template>
   <USeparator
-    icon="i-simple-icons-nuxtdotjs"
+    icon="i-lucide-cpu"
     class="h-px"
   />
 
@@ -63,21 +76,21 @@ function onSubmit() {
             <form @submit.prevent="onSubmit">
               <UFormField
                 name="email"
-                label="Subscribe to our newsletter"
+                label="订阅我们的新闻通讯"
                 size="lg"
               >
                 <UInput
                   v-model="email"
                   type="email"
                   class="w-full"
-                  placeholder="Enter your email"
+                  placeholder="请输入您的邮箱"
                 >
                   <template #trailing>
                     <UButton
                       type="submit"
                       size="xs"
                       color="neutral"
-                      label="Subscribe"
+                      label="订阅"
                     />
                   </template>
                 </UInput>
@@ -90,32 +103,24 @@ function onSubmit() {
 
     <template #left>
       <p class="text-muted text-sm">
-        Built with Nuxt UI • © {{ new Date().getFullYear() }}
+        © {{ new Date().getFullYear() }} 艾塔达克 atdak.com 版权所有
       </p>
     </template>
 
     <template #right>
       <UButton
-        to="https://go.nuxt.com/discord"
-        target="_blank"
-        icon="i-simple-icons-discord"
-        aria-label="Nuxt on Discord"
-        color="neutral"
-        variant="ghost"
-      />
-      <UButton
-        to="https://go.nuxt.com/x"
-        target="_blank"
-        icon="i-simple-icons-x"
-        aria-label="Nuxt on X"
-        color="neutral"
-        variant="ghost"
-      />
-      <UButton
-        to="https://github.com/nuxt-ui-templates/saas"
+        to="https://github.com/useatdak"
         target="_blank"
         icon="i-simple-icons-github"
-        aria-label="Nuxt UI on GitHub"
+        aria-label="atdak on GitHub"
+        color="neutral"
+        variant="ghost"
+      />
+      <UButton
+        to="https://twitter.com/atdak"
+        target="_blank"
+        icon="i-simple-icons-x"
+        aria-label="atdak on X"
         color="neutral"
         variant="ghost"
       />

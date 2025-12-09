@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build output
+.output/
+.nuxt/
+dist/
+
+# Development files
+.git/
+.github/
+.vscode/
+.idea/
+
+# Documentation
+*.md
+!README.md
+
+# Config files not needed in container
+.eslintrc*
+eslint.config.*
+.prettierrc*
+.editorconfig
+tsconfig.json
+renovate.json
+
+# Test files
+*.test.*
+*.spec.*
+__tests__/
+coverage/
+
+# Docker files
+Dockerfile
+compose.yaml
+docker-compose*.yml
+.dockerignore

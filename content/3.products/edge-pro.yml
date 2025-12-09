@@ -1,0 +1,146 @@
+title: atdak Edge Pro
+description: 企业级 AI 边缘计算设备，本地部署大模型，安全高效。
+seo:
+  title: atdak Edge Pro - AI 边缘计算设备 - 艾塔达克
+  description: atdak Edge Pro 是专为企业设计的 AI 边缘计算设备，支持本地部署大语言模型，256 TOPS 算力，毫秒级响应。
+navigation: false
+product:
+  name: atdak Edge Pro
+  tagline: 企业级 AI 边缘计算设备
+  description: 将大模型能力部署到本地，实现数据不出企业、毫秒级响应的智能推理体验。专为追求安全与效率的企业打造。
+  price: ¥12,999
+  originalPrice: ¥15,999
+  discount: 限时优惠
+  images:
+    - /images/hardware/edge-pro-front.png
+    - /images/hardware/edge-pro-side.png
+    - /images/hardware/edge-pro-back.png
+  buyButton:
+    label: 立即购买
+    to: https://console.atdak.com/order/edge-pro
+    target: _blank
+  consultButton:
+    label: 咨询销售
+    to: /contact
+highlights:
+  - title: 本地大模型推理
+    description: 支持 7B-70B 参数大语言模型本地运行，数据完全不出企业网络
+    icon: i-lucide-shield-check
+  - title: 256 TOPS 算力
+    description: 搭载专业 NPU 芯片，提供强大的 AI 推理能力
+    icon: i-lucide-cpu
+  - title: 毫秒级响应
+    description: 本地推理无需网络往返，响应速度比云端快 10 倍以上
+    icon: i-lucide-zap
+  - title: 开箱即用
+    description: 预装 atdak OS 系统，插电即可使用，无需复杂配置
+    icon: i-lucide-plug
+specifications:
+  title: 详细规格
+  groups:
+    - title: 计算性能
+      items:
+        - label: AI 芯片
+          value: 专业 NPU，256 TOPS INT8 算力
+        - label: CPU
+          value: 8 核 ARM Cortex-A78，2.4GHz
+        - label: GPU
+          value: 集成 GPU，支持硬件视频编解码
+        - label: 支持模型
+          value: Llama 2/3、Qwen、ChatGLM、Mistral 等
+        - label: 最大模型参数
+          value: 70B（INT4 量化）
+    - title: 存储与内存
+      items:
+        - label: 内存
+          value: 32GB LPDDR5，102.4GB/s 带宽
+        - label: 存储
+          value: 1TB NVMe SSD（可扩展至 4TB）
+        - label: 模型存储
+          value: 预留 500GB 模型空间
+    - title: 网络与接口
+      items:
+        - label: 以太网
+          value: 2 x 千兆以太网（支持链路聚合）
+        - label: USB
+          value: 2 x USB 3.0，1 x USB-C
+        - label: 显示
+          value: HDMI 2.0（可选，用于调试）
+        - label: 扩展
+          value: M.2 插槽（NVMe/SATA）
+    - title: 物理规格
+      items:
+        - label: 尺寸
+          value: 200 x 200 x 45 mm
+        - label: 重量
+          value: 1.2 kg
+        - label: 电源
+          value: DC 12V/5A（60W 适配器）
+        - label: 功耗
+          value: 典型 35W，峰值 55W
+        - label: 散热
+          value: 主动散热，静音设计（<25dB）
+        - label: 工作温度
+          value: 0°C ~ 45°C
+    - title: 软件与服务
+      items:
+        - label: 操作系统
+          value: atdak OS（基于 Linux）
+        - label: 管理界面
+          value: Web 控制台 + CLI 工具
+        - label: API
+          value: 兼容 OpenAI API 格式
+        - label: 集群
+          value: 支持多设备集群部署
+        - label: 更新
+          value: OTA 自动更新
+        - label: 质保
+          value: 2 年质保，终身技术支持
+useCases:
+  title: 应用场景
+  items:
+    - title: 企业智能客服
+      description: 本地部署智能客服系统，保护客户数据隐私，提供毫秒级响应。
+      icon: i-lucide-headphones
+    - title: 医疗健康
+      description: 在医院内网部署 AI 助手，辅助诊断分析，确保患者数据安全。
+      icon: i-lucide-heart-pulse
+    - title: 金融分析
+      description: 金融机构本地化 AI 部署，满足合规要求，保护敏感数据。
+      icon: i-lucide-landmark
+    - title: 智能制造
+      description: 工厂边缘部署，实现实时质检和智能决策，无需依赖外网。
+      icon: i-lucide-factory
+package:
+  title: 包装清单
+  items:
+    - atdak Edge Pro 主机 x 1
+    - 60W 电源适配器 x 1
+    - 千兆网线 x 1
+    - 快速入门指南 x 1
+    - 质保卡 x 1
+faq:
+  title: 常见问题
+  items:
+    - label: 支持哪些大语言模型？
+      content: 支持主流开源模型，包括 Llama 2/3、Qwen、ChatGLM、Mistral、Yi 等。我们会持续更新支持的模型列表。
+    - label: 需要联网才能使用吗？
+      content: 不需要。设备可完全离线运行，所有推理都在本地完成。但如需模型更新或远程管理，需要网络连接。
+    - label: 如何安装和配置？
+      content: 设备预装了 atdak OS 系统和常用模型，插电联网后通过 Web 控制台即可完成配置，通常只需 10 分钟。
+    - label: 支持多设备集群吗？
+      content: 支持。多台 Edge Pro 可以组成集群，实现负载均衡和高可用部署，适合大规模企业应用。
+    - label: 售后服务如何？
+      content: 提供 2 年硬件质保和终身技术支持。企业客户可选购延保服务和上门支持。
+cta:
+  title: 准备好开启本地 AI 之旅了吗？
+  description: 立即订购 atdak Edge Pro，体验安全、高效的本地 AI 推理。
+  links:
+    - label: 立即购买
+      to: https://console.atdak.com/order/edge-pro
+      target: _blank
+      trailingIcon: i-lucide-shopping-cart
+    - label: 预约演示
+      to: /contact
+      variant: subtle
+      icon: i-lucide-calendar
